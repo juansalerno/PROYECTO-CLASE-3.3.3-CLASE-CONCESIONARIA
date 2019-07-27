@@ -36,7 +36,7 @@ export default class Concesionaria {
         return arregloAutos;
     }
 
-    public imprimirListadoCompleto() {
+    public imprimirListadoCompleto(): void {
         console.log(this);
 
     }
@@ -78,7 +78,7 @@ export default class Concesionaria {
 
     public listarAutosElectricos(): void {
         for (let i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'AutoElectrico') {
+            if (this.baseDatos[i] instanceof AutoElectrico) {
                 console.log(this.baseDatos[i]);
             }
         }
@@ -86,15 +86,7 @@ export default class Concesionaria {
 
     public listarAutosDeCarreras(): void {
         for (let i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'AutoCarreras') {
-                console.log(this.baseDatos[i]);
-            }
-        }
-    }
-
-    public listarAutosComunes(): void {
-        for (let i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'Auto') {
+            if (this.baseDatos[i] instanceof AutoCarreras) {
                 console.log(this.baseDatos[i]);
             }
         }

@@ -18,7 +18,7 @@ listado.reemplazarAutoPorPatente('EH453IH', nuevoAuto);
 // IMPRIMIR SEGUN CLASE:
 
 listado.listarAutosDeCarreras();
+console.log(' ');
 listado.listarAutosElectricos();
-listado.listarAutosComunes();
 
 

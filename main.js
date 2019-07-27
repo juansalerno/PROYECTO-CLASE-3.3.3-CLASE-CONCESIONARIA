@@ -13,5 +13,5 @@ var nuevoAuto = new autoElectrico_1["default"]('Peugeot', '206', 2009, 'AAA333',
 listado.reemplazarAutoPorPatente('EH453IH', nuevoAuto);
 // IMPRIMIR SEGUN CLASE:
 listado.listarAutosDeCarreras();
+console.log(' ');
 listado.listarAutosElectricos();
-listado.listarAutosComunes();

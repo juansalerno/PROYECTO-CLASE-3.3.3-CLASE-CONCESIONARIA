@@ -69,21 +69,14 @@ var Concesionaria = /** @class */ (function () {
     };
     Concesionaria.prototype.listarAutosElectricos = function () {
         for (var i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'AutoElectrico') {
+            if (this.baseDatos[i] instanceof autoElectrico_1["default"]) {
                 console.log(this.baseDatos[i]);
             }
         }
     };
     Concesionaria.prototype.listarAutosDeCarreras = function () {
         for (var i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'AutoCarreras') {
-                console.log(this.baseDatos[i]);
-            }
-        }
-    };
-    Concesionaria.prototype.listarAutosComunes = function () {
-        for (var i = 0; i < this.baseDatos.length; i++) {
-            if (this.baseDatos[i].constructor.name == 'Auto') {
+            if (this.baseDatos[i] instanceof autoCarreras_1["default"]) {
                 console.log(this.baseDatos[i]);
             }
         }
